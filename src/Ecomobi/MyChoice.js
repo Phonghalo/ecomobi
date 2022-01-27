@@ -35,19 +35,21 @@ function MyChoice() {
     })
     console.log(listChoice)
     return (
-        <div className="row">
-            <ScrollContainer className="containerScroll">
-                {myChoices.map((myChoice, index) => (
-                    <button
-                        key={index}
-                        onClick={() => handleKey(myChoice.name)}
-                        className="btnclick"
-                    >
-                        {myChoice.name}
-                    </button>
-                ))}
-            </ScrollContainer>
-            <div className="gridview">
+        <div>
+            <div className="row">
+                <ScrollContainer className="containerScroll">
+                    {myChoices.map((myChoice, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handleKey(myChoice.name)}
+                            className={myChoice.name === key ? "btnclickactive" : "btnclick"}
+                        >
+                            {myChoice.name}
+                        </button>
+                    ))}
+                </ScrollContainer>
+            </div>
+            <div className="row">
                 {listChoice.map((list, index) => (
                     <div key={index}  >
                         <div className="nameview">
@@ -55,10 +57,10 @@ function MyChoice() {
                         </div>
                         <div className="listproduct">
                             {list.links.map((product, index) => (
-                                <div key={index} className="col-md">
+                                <div key={index} className="product">
                                     <a href={product.target_url}>
-                                        <img src={product.product_image} className="imgproduct" />
-                                        {/* <label >{product.title}</label> */}
+                                        <img src={product.image} className="imgproduct" />
+                                        <div className="lbproduct" >{product.product_name}</div>
                                     </a>
                                 </div>
                             ))}

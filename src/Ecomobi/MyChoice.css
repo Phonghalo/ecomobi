@@ -7,28 +7,68 @@
     gap: 20px;
 }
 .btnclick{
-    
+    height: 50px;
     font-size: 18px;
     background-color: #fff;
     border: none;
     border-radius: 3px;
     padding: 5px;
 }
+.btnclickactive{
+    font-size: 18px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: rgb(255, 166, 0);
+}
+
 .listproduct{
     display:grid;
     grid-template-columns: auto auto auto auto;
    
-    gap: 10px;
+    gap: 40px 10px;
 
 }
 .gridview{
     
     width: 100%;
 }
-
+.product{
+    margin: 10px;
+    background-color: #ebcdcd;
+    text-align: center;
+    border-radius: 12px;
+    width: 300px;
+    height: 400px;
+    /* transform: scale(1,2); */
+    box-sizing: border-box;
+}
+.product:hover{
+    transform: scale(1,1.025);
+}
 .imgproduct{
     width: 300px;
     height: 300px;
-    object-fit: cover;
     overflow: hidden;
+    border-top-left-radius: 12px ;
+    border-top-right-radius: 12px ;
+}
+.lbproduct{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    background-color: #ebcdcd;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: auto    ;
+}
+.nameview{
+    font-size: 24px;
+    margin: 24px;
+    font-weight: bold;
 }
