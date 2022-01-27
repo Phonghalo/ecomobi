@@ -1,0 +1,35 @@
+.btnleft{
+    justify-content: flex-start;
+    left: 12px;
+}
+.btnright{
+    
+    justify-content: flex-end;
+    right: 12px;
+}
+.listbtn{
+    justify-content: flex-end;
+    border-radius: 50%;
+    
+}
+.carousel-control-prev-icon{
+    width: 30px;
+    height: 60px;
+    background-color: black;
+}
+.carousel-control-next-icon{
+    width: 30px;
+    height: 60px;
+    background-color: black;
+}
+.carousel-indicators{
+    justify-content: end;
+    background: none;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+}
+.carousel-indicators .active {
+    background-color: black;
+}

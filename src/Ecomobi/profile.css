@@ -1,0 +1,47 @@
+.avatar{
+    position:relative;
+    text-align: center;
+}
+#avatarKol{
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+    top: -50px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    border: 5px solid #fff;
+    z-index: 9999;
+}
+.name{
+    margin: 15px 0px;
+}
+.name .nameKol{
+    font-size: 40px;
+
+}
+.nameInfor{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.ContentKol{
+    font-size: 18px
+}
+#areaContent{
+    width: 100%;
+    border: none;
+    overflow:hidden;
+    resize: none;
+}
+#areaContent::-webkit-scrollbar{
+    display: none;
+}
+#moreInfo:hover{
+    cursor: pointer;
+}
+.iconLink{
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    object-fit: cover;
+}

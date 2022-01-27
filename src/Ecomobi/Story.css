@@ -1,0 +1,39 @@
+.story{
+    display: flex;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding: 30px 0px;
+    overflow: auto;
+    white-space: nowrap;
+    gap: 100px;
+}
+.storyfill{
+    display:flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+}
+.imgStory{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.lbStory{
+    display: block;
+    width: 100px;
+    height: 40px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    color: black;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+}
+.scroll-container{
+    display: flex;
+    gap:100px
+}
